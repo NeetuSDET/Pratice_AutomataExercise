@@ -1,0 +1,205 @@
+1. User Registration Flow
+Scenario
+
+Verify that a new user can successfully register.
+
+Steps
+Launch browser
+Navigate to homepage
+Click Signup/Login
+Enter username and email
+Fill account details
+Submit registration
+Verify account created message
+Verify user logged in
+Logout
+Validations
+Account created successfully
+Username displayed after login
+No validation errors
+2. Login and Logout Flow
+Scenario
+
+Verify existing user can login and logout.
+
+Steps
+Open application
+Click Signup/Login
+Enter valid credentials
+Click Login
+Verify homepage
+Click Logout
+Verify redirected to login page
+Validations
+Successful login
+Logout successful
+Session cleared
+3. Invalid Login Flow
+Scenario
+
+Verify error message for invalid credentials.
+
+Steps
+Navigate to login page
+Enter invalid email/password
+Click Login
+Validations
+Error message displayed
+User remains on login page
+4. Search Product and Add to Cart
+Scenario
+
+Verify user can search and add product to cart.
+
+Steps
+Open Products page
+Search product name
+Verify results
+Add product to cart
+Open cart
+Validations
+Product appears in results
+Correct item added to cart
+Quantity and price displayed correctly
+5. Add Multiple Products to Cart
+Scenario
+
+Verify multiple products can be added.
+
+Steps
+Open products page
+Add first product
+Continue shopping
+Add second product
+Open cart
+Validations
+Both products displayed
+Correct total price calculated
+6. Update Quantity in Cart
+Scenario
+
+Verify quantity update functionality.
+
+Steps
+Add product to cart
+Open cart
+Increase quantity
+Refresh/update cart
+Validations
+Quantity updated
+Total amount recalculated
+7. Remove Product from Cart
+Scenario
+
+Verify user can remove product.
+
+Steps
+Add products to cart
+Open cart
+Click remove/delete
+Validations
+Product removed
+Cart updated correctly
+8. Complete Checkout Flow
+Scenario
+
+Verify user can place order successfully.
+
+Steps
+Login
+Add product to cart
+Proceed to checkout
+Verify address details
+Enter payment details
+Place order
+Validations
+Order placed successfully
+Confirmation message displayed
+9. Guest Checkout Validation
+Scenario
+
+Verify login required before checkout.
+
+Steps
+Add product to cart
+Click Proceed to Checkout
+Validations
+Redirected to login/signup page
+10. Contact Us Form Submission
+Scenario
+
+Verify contact form submission.
+
+Steps
+Open Contact Us page
+Fill all fields
+Upload file
+Submit form
+Validations
+Success message displayed
+File uploaded successfully
+11. Verify Product Details Page
+Scenario
+
+Verify product details page functionality.
+
+Steps
+Open products page
+Click View Product
+Validations
+Product name visible
+Price displayed
+Availability shown
+Add to cart button present
+12. Verify Category Navigation
+Scenario
+
+Verify products filtered by category.
+
+Steps
+Open homepage
+Select Women → Dress category
+Validations
+Relevant products displayed
+13. Verify Brand Filtering
+Scenario
+
+Verify brand-based filtering.
+
+Steps
+Open products page
+Select a brand
+Validations
+Only selected brand products displayed
+14. End-to-End Purchase Flow (Most Important)
+Complete Real-Time Scenario
+Register new user
+Login
+Search product
+Add multiple products
+Update quantity
+Proceed to checkout
+Enter payment details
+Place order
+Verify order success
+Logout
+
+This is the best framework-level E2E scenario because it covers:
+
+Authentication
+Search
+Cart
+Checkout
+Payment
+Session handling
+15. Session Persistence Scenario
+Scenario
+
+Verify cart retained after login.
+
+Steps
+Add product without login
+Login
+Open cart
+Validations
+Previously added product still exists

@@ -62,7 +62,12 @@ git add .
  delete mode 100644 .github/workflows/playwright.yml
 (base) rajnishatrismbp:2026_AutomationExerciseFixture rajnishkhatri$ git push origin main
 
+//
+git pull origin main --rebase
+git push origin main
 
-
+git add .
+git rebase --continue
+git push origin main
 
 

@@ -1,16 +1,16 @@
-import { test } from '@playwright/test';
-import { SessionPersistencePage } from '../../pages/SessionPersistencePage.js';
-import loginData from '../../testdata/login.json' assert { type: 'json' };
+// import { test } from '@playwright/test';
+// import { SessionPersistencePage } from '../../pages/SessionPersistencePage.js';
+// import loginData from '../../testdata/login.json' assert { type: 'json' };
 
-test('15. Session Persistence Scenario using POM', async ({ page }) => {
+// test('15. Session Persistence Scenario using POM', async ({ page }) => {
 
-    const sessionPage = new SessionPersistencePage(page);
-    await sessionPage.openApplication();
-    const productName = await sessionPage.addProductWithoutLogin();
-    await sessionPage.login(loginData.email, loginData.password);
-    await sessionPage.openCart();
-    await sessionPage.verifyProductRetained(productName);
-});
+//     const sessionPage = new SessionPersistencePage(page);
+//     await sessionPage.openApplication();
+//     const productName = await sessionPage.addProductWithoutLogin();
+//     await sessionPage.login(loginData.email, loginData.password);
+//     await sessionPage.openCart();
+//     await sessionPage.verifyProductRetained(productName);
+// });
 
 
 

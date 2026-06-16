@@ -9,10 +9,20 @@ test('Remove Product from Cart', async ({ page }) => {
     await cartRemovePage.openCart();
     // console.log('Before remove count: ' + await cartRemovePage.cartProductRows.count());
     await cartRemovePage.removeProduct();
-    await expect(page.locator('#submit-btn')).toBeVisible();
-    await expect(page.locator('.loading-spinner')).toBeHidden();
-    await expect(page.locator('#username')).toBeEnabled();
-    await expect(page.locator('#submit-action')).toBeDisabled();
+
+    const emptyCartMessage = page.locator('#empty_cart');
+    
+    // 1. Verify it is visible
+    await expect(emptyCartMessage).toBeVisible();
+    
+    // 2. Fixed: Use toContainText to ignore the dynamic spacing and strict text changes
+    await expect(emptyCartMessage).toContainText('Cart is empty!');
+
+    // await expect(page.locator('span#empty_cart')).toBeVisible();
+    // await expect(page.locator('#submit-btn')).toBeVisible();
+    // await expect(page.locator('.loading-spinner')).toBeHidden();
+    // await expect(page.locator('#username')).toBeEnabled();
+    // await expect(page.locator('#submit-action')).toBeDisabled();
 
 });
 

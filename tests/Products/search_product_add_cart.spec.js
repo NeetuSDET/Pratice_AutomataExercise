@@ -1,8 +1,8 @@
 import { test } from '@playwright/test';
 import { SearchProductPage } from '../../pages/SearchProductPage.js';
-// import searchProductData from '../../testData/searchProduct.json';
+import searchProductData from '../../testdata/searchProduct.json'
 
-test('Search Product and Add to Cart', async ({  }) => {
+test('Search Product and Add to Cart', async ({page }) => {
 
   const searchProductPage = new SearchProductPage(page);
 

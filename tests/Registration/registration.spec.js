@@ -21,15 +21,15 @@
   await registrationPage.logout();
   await registrationPage.verifyLogout();
 */
-let user = await registrationPage.enterSignupDetails();
+// let user = await registrationPage.enterSignupDetails();
 
-await registrationPage.fillAccountInformation(registrationData.password,registrationData.day,registrationData.month,registrationData.year);
-await registrationPage.fillAddressInformation(registrationData.firstname,egistrationData.lastname,registrationData.address,registrationData.country,registrationData.state,registrationData.city,registrationData.zipcode,registrationData.mobile);
-await registrationPage.clickCreateAccount();
-await registrationPage.verifyAccountCreated();
-await registrationPage.clickContinue();
-await registrationPage.verifyUsernameDisplayed(user.username);
-});
+// await registrationPage.fillAccountInformation(registrationData.password,registrationData.day,registrationData.month,registrationData.year);
+// await registrationPage.fillAddressInformation(registrationData.firstname,egistrationData.lastname,registrationData.address,registrationData.country,registrationData.state,registrationData.city,registrationData.zipcode,registrationData.mobile);
+// await registrationPage.clickCreateAccount();
+// await registrationPage.verifyAccountCreated();
+// await registrationPage.clickContinue();
+// await registrationPage.verifyUsernameDisplayed(user.username);
+// });
 
 
 

@@ -1,10 +1,12 @@
-import { test } from '@playwright/test';
-import {RegistrationPage} from '../../pages/RegistrationPage.js';
-import registrationData from '../../testdata/registration.json';
+// import { test } from '@playwright/test';
+// import {RegistrationPage} from '../../pages/RegistrationPage.js';
+// import registrationData from '../../testdata/registration.json';
 
-test('registration', async ({ page }) => {
+// test('registration', async ({ page }) => {
 
-  const registrationPage = new RegistrationPage(page);
+//   const registrationPage = new RegistrationPage(page);
+
+  
 /*
   // let email = 'neetu' + Date.now() + '@gmail.com';
   await registrationPage.launch(registrationData.url);
